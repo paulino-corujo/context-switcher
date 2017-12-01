@@ -1,0 +1,34 @@
+{
+  "name": "context-switcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/context-switcher.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack --display-optimization-bailout",
+    "clean": "rm -r dist",
+    "dist": "npm run build && cd dist && npm pack .. && cd ..",
+    "start": "webpack-dev-server --progress --colors",
+    "stats": "webpack --profile --json > stats.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CenturyLink Cloud",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "compression-webpack-plugin": "^1.0.1",
+    "eslint": "^4.12.1",
+    "eslint-loader": "^1.9.0",
+    "webpack": "^3.9.1"
+  },
+  "peerDependencies": {
+    "angular": "^1.5.8"
+  },
+  "private": true,
+  "dependencies": {}
+}
